@@ -63,19 +63,19 @@ public class Assignment1 {
         for (int i = 0; i < n; i++) {
             System.out.println("\nEnter details of Student " + (i + 1));
 
-            System.out.print("Enter Name: ");
+        System.out.print("Enter Name: ");
             String name = sc.nextLine();
 
             System.out.print("Enter Roll No: ");
             int rollNo = sc.nextInt();
 
-            int[] marks = new int[5];
-            System.out.println("Enter marks of 5 subjects:");
+        int[] marks = new int[5];
+         System.out.println("Enter marks of 5 subjects:");
             for (int j = 0; j < 5; j++) {
                 System.out.print("Subject " + (j + 1) + ": ");
                 marks[j] = sc.nextInt();
-            }
-            sc.nextLine(); // Clear buffer
+        }
+         sc.nextLine(); 
 
             students[i] = new Student(name, rollNo, marks);
             students[i].calculatePercentage();
@@ -96,3 +96,4 @@ public class Assignment1 {
         sc.close();
     }
 }
+
